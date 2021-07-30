@@ -1,0 +1,9 @@
+node_modules
+*.bak
+package-lock.json
+dist
+tests/__coverage__
+coverage
+.vscode
+*.orig
+

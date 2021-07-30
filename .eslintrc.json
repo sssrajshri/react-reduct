@@ -1,0 +1,83 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "globals": {
+    "document": false,
+    "salt": true
+  },
+  "plugins": [
+      "react",
+      "jsx-a11y",
+      "import"
+  ],
+  "rules":{
+      "indent": ["error", 2, {"SwitchCase": 1}],
+      "no-tabs": 0,
+      "no-unused-vars":1,
+      "no-restricted-globals":1,
+      "no-param-reassign": [2, { "props": false }],
+      "prefer-const": ["error", {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }],
+      "linebreak-style":0,
+      "react/prop-types":0,
+      "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
+      "react/forbid-prop-types": [0, { "forbid": ["array"] }],
+      "react/no-array-index-key":0,
+      "react/jsx-no-bind":1,
+      "import/prefer-default-export":0,
+      "import/extensions":0,
+      "import/no-duplicates":1,
+      "react/jsx-indent":["error", 2],
+      "import/no-extraneous-dependencies":1,
+      "jsx-a11y/no-noninteractive-element-interactions": [
+        "error",
+        {
+          "handlers": [
+            "onClick",
+            "onMouseDown",
+            "onMouseUp",
+            "onKeyPress",
+            "onKeyDown",
+            "onKeyUp"
+          ]
+        }
+      ],
+      "jsx-a11y/no-static-element-interactions": [
+        "error",
+        {
+          "handlers": [
+            "onClick",
+            "onMouseDown",
+            "onMouseUp",
+            "onKeyPress",
+            "onKeyDown",
+            "onKeyUp"
+          ]
+        }
+      ],
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "components": [ "Link" ],
+          "specialLink": [ "to" ]
+        }
+      ],
+      "jsx-a11y/click-events-have-key-events":0,
+      "comma-dangle":0,
+      "no-useless-escape":0,
+      "react/jsx-one-expression-per-line": 0,
+      "no-multiple-empty-lines": 0
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
+  }
+}
